@@ -6,6 +6,11 @@
 DOMAIN-SUFFIX,kraken.com
 DOMAIN,kraken.zendesk.com
 DOMAIN,sdk-service.nsureapi.com
+DOMAIN,clientstream.launchdarkly.com
+DOMAIN,events.launchdarkly.com
+DOMAIN,sdk.iad-05.braze.com
+DOMAIN,api.segment.io
+DOMAIN,o552333.ingest.us.sentry.io
 AND,((DOMAIN,p.sardine.ai),(OR,((USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
 AND,((DOMAIN,m.stripe.com),(USER-AGENT,Krak/*))
 AND,((DOMAIN,u.expo.dev),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
