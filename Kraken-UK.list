@@ -1,0 +1,23 @@
+# Krak / Kraken / Kraken Pro - Loon rules
+# Generated from locally analyzed captures, 2026-10-07.
+# Assign Kraken英国固定 in [Remote Rule].
+# Loon >= 3.1.7; HTTP conditions require visible UA/full URL.
+# Unidentified shared requests keep existing routing.
+DOMAIN-SUFFIX,kraken.com
+DOMAIN,kraken.zendesk.com
+AND,((DOMAIN,p.sardine.ai),(OR,((USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
+AND,((DOMAIN,m.stripe.com),(USER-AGENT,Krak/*))
+AND,((DOMAIN,u.expo.dev),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
+AND,((DOMAIN,assets.eascdn.net),(USER-AGENT,Kraken/*))
+AND,((DOMAIN,api.segment.io),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
+AND,((DOMAIN,cdn-settings.segment.com),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
+AND,((DOMAIN,sdk.iad-05.braze.com),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
+AND,((DOMAIN,sdk.nsureapi.com),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
+AND,((DOMAIN,api.bitdrift.io),(OR,((USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
+AND,((DOMAIN,content.ethoca.com),(USER-AGENT,Krak/*))
+AND,((DOMAIN,fcmtoken.googleapis.com),(USER-AGENT,Kraken/*))
+AND,((DOMAIN,clients3.google.com),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken%20Pro/*))),(URL-REGEX,^https://clients3\.google\.com/generate_204(?:\?.*)?$))
+AND,((DOMAIN,www.google.com),(USER-AGENT,Kraken%20Pro/*),(URL-REGEX,^https://www\.google\.com/generate_204(?:\?.*)?$))
+URL-REGEX,^https://o552333\.ingest\.us\.sentry\.io/api/4508800043057152/envelope/(?:\?.*)?$
+URL-REGEX,^https://o552333\.ingest\.sentry\.io/api/5690849/envelope/(?:\?.*)?$
+URL-REGEX,^https://o552333\.ingest\.us\.sentry\.io/api/5785789/envelope/(?:\?.*)?$
