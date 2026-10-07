@@ -5,6 +5,7 @@
 # Unidentified shared requests keep existing routing.
 DOMAIN-SUFFIX,kraken.com
 DOMAIN,kraken.zendesk.com
+DOMAIN,sdk-service.nsureapi.com
 AND,((DOMAIN,p.sardine.ai),(OR,((USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
 AND,((DOMAIN,m.stripe.com),(USER-AGENT,Krak/*))
 AND,((DOMAIN,u.expo.dev),(OR,((USER-AGENT,Krak/*),(USER-AGENT,Kraken/*),(USER-AGENT,Kraken%20Pro/*))))
